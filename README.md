@@ -3,4 +3,4 @@
 
 ## Giorno 1
 
-Spring boot
+Spring boot - Beans, Configuration, Component.
