@@ -21,7 +21,6 @@ public class Pizza extends Margherita {
 		}
 		
 		return (toppings != null) ? prezzo + getToppings() : prezzo;
-		
 	}
 	
 	public Pizza(String nome, List<Toppings> toppings) {
@@ -37,11 +36,9 @@ public class Pizza extends Margherita {
 		}
 		return top;
 	}
-	
 
 	public String ToString() {
 		return nome + " Ingredienti: " + pomodoro + " " + mozzarella + " " + toppings.toString() + " Totale: " + getPrezzoTot();
 		
 	}
-	
 }
