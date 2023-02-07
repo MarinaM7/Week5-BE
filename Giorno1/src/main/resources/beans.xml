@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<bean class="com.marinamuntenita.Giorno1.beans.Margherita" id="pizza0">	
+	</bean>
+
+	<bean class="com.marinamuntenita.Giorno1.beans.Pizza" id="pizza1">
+		<constructor-arg index="0" type="java.lang.String" value="Hawaiian Pizza"></constructor-arg>
+		<constructor-arg index="1" ref="toppingsHawaii"></constructor-arg>
+	</bean>
+
+	<bean id="toppingsHawaii" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="topping1" />
+				<ref bean="topping2" />
+				<ref bean="topping3" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean class="com.marinamuntenita.Giorno1.beans.Toppings" id="topping1">
+		<constructor-arg index="0" type="String" value="ananas"></constructor-arg>
+		<constructor-arg index="1" type="double" value="3.5"></constructor-arg>
+	</bean>
+	
+	<bean class="com.marinamuntenita.Giorno1.beans.Toppings" id="topping2">
+		<constructor-arg index="0" type="String" value="ham"></constructor-arg>
+		<constructor-arg index="1" type="double" value="1.5"></constructor-arg>
+	</bean>
+	
+	<bean class="com.marinamuntenita.Giorno1.beans.Toppings" id="topping3">
+		<constructor-arg index="0" type="String" value="ham"></constructor-arg>
+		<constructor-arg index="1" type="double" value="1.5"></constructor-arg>
+	</bean>
+	
+	<bean class="com.marinamuntenita.Giorno1.beans.Pizza" id="pizza2">
+		<constructor-arg index="0" type="java.lang.String" value="Salami Pizza"></constructor-arg>
+		<constructor-arg index="1" ref="topping4"></constructor-arg>
+	</bean>
+	<bean class="com.marinamuntenita.Giorno1.beans.Toppings" id="topping4">
+		<constructor-arg index="0" type="String" value="salami"></constructor-arg>
+		<constructor-arg index="1" type="double" value="2.5"></constructor-arg>
+	</bean>
+	
+	<bean class="com.marinamuntenita.Giorno1.beans.Toppings" id="topping5">
+		<constructor-arg index="0" type="String" value="onions"></constructor-arg>
+		<constructor-arg index="1" type="double" value="2.0"></constructor-arg>
+	</bean>
+	
+	<bean class="com.marinamuntenita.Giorno1.beans.Drinks" id="drink1">
+		<constructor-arg index="0" type="String" value="Lemonade"></constructor-arg>
+		<constructor-arg index="1" type="double" value="4.5"></constructor-arg>
+	</bean>
+	<bean class="com.marinamuntenita.Giorno1.beans.Drinks" id="drink2">
+		<constructor-arg index="0" type="String" value="Water"></constructor-arg>
+		<constructor-arg index="1" type="double" value="1.5"></constructor-arg>
+	</bean>
+	<bean class="com.marinamuntenita.Giorno1.beans.Drinks" id="drink3">
+		<constructor-arg index="0" type="String" value="Wine"></constructor-arg>
+		<constructor-arg index="1" type="double" value="15"></constructor-arg>
+	</bean>
+
+</beans>
