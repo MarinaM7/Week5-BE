@@ -43,17 +43,17 @@ public class Giorno1Application {
 		System.out.println();
 		System.out.println("***Pizza***");
 		System.out.println();
-		System.out.println(marghe.toString());
+		System.out.println(marghe.ToString());
 		System.out.println(hawaii.ToString());
 		System.out.println(salami.ToString());
 		
 		System.out.println();
 		System.out.println("***Toppings***");
 		System.out.println();
-		System.out.println(ananas);
-		System.out.println(salame);
-		System.out.println(ham);
-		System.out.println(onion);
+		System.out.println(ananas.ToString());
+		System.out.println(salame.ToString());
+		System.out.println(ham.ToString());
+		System.out.println(onion.ToString());
 		
 		System.out.println();
 		System.out.println("***Drinks***");

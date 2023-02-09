@@ -13,11 +13,16 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 @Component("toppings")
 @Scope("prototype")
 public class Toppings {
+	
 	String nome;
 	double prezzo;
+	
+	public String ToString() {
+		return nome.toUpperCase() + " " + prezzo;
+		
+	}
 	
 }

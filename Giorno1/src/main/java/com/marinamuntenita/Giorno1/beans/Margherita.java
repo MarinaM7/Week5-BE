@@ -8,7 +8,6 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 public class Margherita {
@@ -17,4 +16,8 @@ public class Margherita {
 	 protected String mozzarella = "mozzarella";
 	 protected double prezzo = 4.50;
 	
+	 public String ToString() {
+			return Margherita.class.getSimpleName().toUpperCase() + " Ingredienti: " + pomodoro + " " + mozzarella + " Totale: " + prezzo;
+			
+		}
 }
